@@ -35,6 +35,6 @@ const dogs = [
 ]
 
 
-app.get("/", (req, res) => res.send("Welcome to my api"))
+app.get("/", (req, res) => res.json(dogs))
 
 app.listen(4000, () => console.log("Api running 😎"))
